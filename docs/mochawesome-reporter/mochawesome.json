@@ -1,0 +1,79 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2018-06-03T11:49:41.319Z",
+    "end": "2018-06-03T11:49:41.362Z",
+    "duration": 43,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false,
+    "passPercentClass": "success",
+    "pendingPercentClass": "danger"
+  },
+  "suites": {
+    "uuid": "569d068e-32c4-4443-b510-c20105e44399",
+    "title": "",
+    "fullFile": "",
+    "file": "",
+    "beforeHooks": [],
+    "afterHooks": [],
+    "tests": [],
+    "suites": [
+      {
+        "uuid": "e812b707-352d-4263-9821-57c36168de6e",
+        "title": "后台接口测试",
+        "fullFile": "F:\\testlession\\service\\router.spec.js",
+        "file": "\\service\\router.spec.js",
+        "beforeHooks": [],
+        "afterHooks": [],
+        "tests": [
+          {
+            "title": "test 接口",
+            "fullTitle": "后台接口测试 test 接口",
+            "timedOut": false,
+            "duration": 19,
+            "state": "passed",
+            "speed": "fast",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "code": "axios.get('http://localhost:3000/test')\n.then(function(res){\n\texpect(res.status).to.equal(200);//请求状态为200\n\tif (res.data.data == 'hello world') {\n\t\tdone();\n\t}else{\n\t\tdone(new Error('结果差强人意！'));\n\t}\n}).catch(function(error){\n\tdone(error);\n});\n// request('http://localhost:3000/test')\n// .expect('Content-Type', /json/)   //返回json文件\n// .expect(200)    //同时状态为200\n// .end(function(res){\n// \tconsole.log(res);\n// \tif (res.data == 'hello world') {\n// \t\tdone();\n// \t} else {\n// \t\tdone(err);\n// \t}\n// })",
+            "err": {},
+            "isRoot": false,
+            "uuid": "d79ff335-ce7f-4949-8c63-9e6d873d9abe",
+            "isHook": false,
+            "skipped": false
+          }
+        ],
+        "suites": [],
+        "passes": [
+          "d79ff335-ce7f-4949-8c63-9e6d873d9abe"
+        ],
+        "failures": [],
+        "pending": [],
+        "skipped": [],
+        "duration": 19,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 2000
+      }
+    ],
+    "passes": [],
+    "failures": [],
+    "pending": [],
+    "skipped": [],
+    "duration": 0,
+    "root": true,
+    "rootEmpty": true,
+    "_timeout": 2000
+  },
+  "copyrightYear": 2018
+}
